@@ -12,4 +12,4 @@ Italiano:
   Primo tentativo di game-dev con il motore Godot.
   È un clone del popolare gioco platform "Super Meat Boy".
   Creato in collaborazione con ---.
-  Chiunque voglia dare una mano è il benvenuto!
+  Chiunque voglia dare una mano è benvenuto!
