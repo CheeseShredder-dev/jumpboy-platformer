@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Graphic Assets/block.png" type="Texture" id=1]
+
+[node name="Node" type="Node"]
+
+[node name="TileMap" type="TileMap" parent="."]
+cell_size = Vector2( 70, 70 )
+format = 1
+
+[node name="Sprite" type="Sprite" parent="TileMap"]
+position = Vector2( 71, 56 )
+texture = ExtResource( 1 )
