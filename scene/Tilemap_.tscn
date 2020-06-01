@@ -1,16 +1,17 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://tileset/Graphic Assets/block.png" type="Texture" id=1]
-[ext_resource path="res://tileset/Graphic Assets/bonus.png" type="Texture" id=2]
-[ext_resource path="res://tileset/Graphic Assets/ground_cave.png" type="Texture" id=3]
-[ext_resource path="res://tileset/Graphic Assets/ground_rock.png" type="Texture" id=4]
-[ext_resource path="res://tileset/Graphic Assets/water.png" type="Texture" id=5]
-[ext_resource path="res://tileset/Graphic Assets/lava.png" type="Texture" id=6]
-[ext_resource path="res://tileset/Graphic Assets/ground_dirt.png" type="Texture" id=7]
-[ext_resource path="res://tileset/Graphic Assets/ground_sand.png" type="Texture" id=8]
-[ext_resource path="res://tileset/Graphic Assets/ground.png" type="Texture" id=9]
-[ext_resource path="res://tileset/Graphic Assets/bonus_used.png" type="Texture" id=10]
-[ext_resource path="res://tileset/Graphic Assets/crate.png" type="Texture" id=11]
+[ext_resource path="res://Graphic Assets/block.png" type="Texture" id=1]
+[ext_resource path="res://Graphic Assets/bonus.png" type="Texture" id=2]
+[ext_resource path="res://Graphic Assets/ground_cave.png" type="Texture" id=3]
+[ext_resource path="res://Graphic Assets/ground_rock.png" type="Texture" id=4]
+[ext_resource path="res://Graphic Assets/water.png" type="Texture" id=5]
+[ext_resource path="res://Graphic Assets/lava.png" type="Texture" id=6]
+[ext_resource path="res://Graphic Assets/ground_dirt.png" type="Texture" id=7]
+[ext_resource path="res://Graphic Assets/ground_sand.png" type="Texture" id=8]
+[ext_resource path="res://Graphic Assets/ground.png" type="Texture" id=9]
+[ext_resource path="res://Graphic Assets/bonus_used.png" type="Texture" id=10]
+[ext_resource path="res://Graphic Assets/crate.png" type="Texture" id=11]
+
 
 [node name="Node" type="Node"]
 
