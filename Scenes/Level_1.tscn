@@ -17,7 +17,6 @@
 [ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0011.png" type="Texture" id=15]
 [ext_resource path="res://Graphic Assets/Character Anim/front.png" type="Texture" id=16]
 
-
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 3 ) ],
