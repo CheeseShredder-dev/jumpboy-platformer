@@ -1,0 +1,124 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Graphic Assets/block.png" type="Texture" id=1]
+[ext_resource path="res://Graphic Assets/bonus.png" type="Texture" id=2]
+[ext_resource path="res://Graphic Assets/crate.png" type="Texture" id=3]
+[ext_resource path="res://Graphic Assets/bonus_used.png" type="Texture" id=4]
+[ext_resource path="res://Graphic Assets/ground.png" type="Texture" id=5]
+[ext_resource path="res://Graphic Assets/ground_cave.png" type="Texture" id=6]
+[ext_resource path="res://Graphic Assets/ground_dirt.png" type="Texture" id=7]
+[ext_resource path="res://Graphic Assets/ground_rock.png" type="Texture" id=8]
+[ext_resource path="res://Graphic Assets/lava.png" type="Texture" id=9]
+[ext_resource path="res://Graphic Assets/ground_sand.png" type="Texture" id=10]
+[ext_resource path="res://Graphic Assets/hill_long.png" type="Texture" id=11]
+[ext_resource path="res://Graphic Assets/hill_short.png" type="Texture" id=12]
+[ext_resource path="res://Graphic Assets/spikes.png" type="Texture" id=13]
+[ext_resource path="res://Graphic Assets/alien_plant.png" type="Texture" id=14]
+[ext_resource path="res://Graphic Assets/key_blue.png" type="Texture" id=15]
+[ext_resource path="res://Graphic Assets/key_red.png" type="Texture" id=16]
+[ext_resource path="res://Graphic Assets/key_green.png" type="Texture" id=17]
+[ext_resource path="res://Graphic Assets/water.png" type="Texture" id=18]
+[ext_resource path="res://Graphic Assets/key_yellow.png" type="Texture" id=19]
+[ext_resource path="res://Graphic Assets/lock_blue.png" type="Texture" id=20]
+[ext_resource path="res://Graphic Assets/lock_green.png" type="Texture" id=21]
+[ext_resource path="res://Graphic Assets/lock_red.png" type="Texture" id=22]
+[ext_resource path="res://Graphic Assets/lock_yellow.png" type="Texture" id=23]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+cell_size = Vector2( 70, 70 )
+format = 1
+
+[node name="Dirt" type="Sprite" parent="TileMap"]
+position = Vector2( 71, 56 )
+texture = ExtResource( 1 )
+
+[node name="Lucky_Block" type="Sprite" parent="TileMap"]
+position = Vector2( 146, 53 )
+texture = ExtResource( 2 )
+
+[node name="Box" type="Sprite" parent="TileMap"]
+position = Vector2( 354, 67 )
+texture = ExtResource( 3 )
+
+[node name="Lucky_Block_used" type="Sprite" parent="TileMap"]
+position = Vector2( 232, 55 )
+texture = ExtResource( 4 )
+
+[node name="ground" type="Sprite" parent="TileMap"]
+position = Vector2( 433, 69 )
+texture = ExtResource( 5 )
+
+[node name="ground_cave" type="Sprite" parent="TileMap"]
+position = Vector2( 509, 68 )
+texture = ExtResource( 6 )
+
+[node name="ground_dirt" type="Sprite" parent="TileMap"]
+position = Vector2( 427, 151 )
+texture = ExtResource( 7 )
+
+[node name="ground_rock" type="Sprite" parent="TileMap"]
+position = Vector2( 515, 143 )
+texture = ExtResource( 8 )
+
+[node name="lava" type="Sprite" parent="TileMap"]
+position = Vector2( 806, 83 )
+texture = ExtResource( 9 )
+
+[node name="ground_sand" type="Sprite" parent="TileMap"]
+position = Vector2( 618, 69 )
+texture = ExtResource( 10 )
+
+[node name="Big_cactus" type="Sprite" parent="TileMap"]
+position = Vector2( 66, 192 )
+texture = ExtResource( 11 )
+
+[node name="Small_cactus" type="Sprite" parent="TileMap"]
+position = Vector2( 135, 211 )
+texture = ExtResource( 12 )
+
+[node name="Spikes" type="Sprite" parent="TileMap"]
+position = Vector2( 222, 241 )
+texture = ExtResource( 13 )
+
+[node name="alien_plant" type="Sprite" parent="TileMap"]
+position = Vector2( 79, 315.852 )
+texture = ExtResource( 14 )
+
+[node name="key_blue" type="Sprite" parent="TileMap"]
+position = Vector2( 49, 400.852 )
+texture = ExtResource( 15 )
+
+[node name="key_red" type="Sprite" parent="TileMap"]
+position = Vector2( 127, 405.852 )
+texture = ExtResource( 16 )
+
+[node name="key_green" type="Sprite" parent="TileMap"]
+position = Vector2( 209, 410.852 )
+texture = ExtResource( 17 )
+
+[node name="water" type="Sprite" parent="TileMap"]
+position = Vector2( 715, 82 )
+texture = ExtResource( 18 )
+
+[node name="key_yellow" type="Sprite" parent="TileMap"]
+position = Vector2( 280, 414.852 )
+texture = ExtResource( 19 )
+
+[node name="lock_blue" type="Sprite" parent="TileMap"]
+position = Vector2( 43, 486.852 )
+texture = ExtResource( 20 )
+
+[node name="lock_green" type="Sprite" parent="TileMap"]
+position = Vector2( 204, 480.852 )
+texture = ExtResource( 21 )
+
+[node name="lock_red" type="Sprite" parent="TileMap"]
+position = Vector2( 124, 488.852 )
+texture = ExtResource( 22 )
+
+[node name="lock_yellow" type="Sprite" parent="TileMap"]
+position = Vector2( 284, 488.852 )
+texture = ExtResource( 23 )
+
