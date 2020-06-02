@@ -16,5 +16,5 @@ _global_script_class_icons={
 [application]
 
 config/name="jumpyboy-platformer"
-run/main_scene="res://scenes/Scena_1.tscn"
+run/main_scene="res://Scenes/Level_1_.tscn"
 config/icon="res://icon.png"
