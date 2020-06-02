@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=2]
 
-[ext_resource path="res://scene/Tileset.res" type="TileSet" id=1]
+[ext_resource path="res://Scenes/Tileset.res" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
 [ext_resource path="res://Graphic Assets/Character Anim/side.png" type="Texture" id=3]
 [ext_resource path="res://Graphic Assets/Character Anim/jump.png" type="Texture" id=4]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0010.png" type="Texture" id=14]
 [ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0011.png" type="Texture" id=15]
 [ext_resource path="res://Graphic Assets/Character Anim/front.png" type="Texture" id=16]
+
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
