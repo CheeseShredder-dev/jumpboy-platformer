@@ -17,11 +17,6 @@
 [ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0011.png" type="Texture" id=15]
 [ext_resource path="res://Graphic Assets/Character Anim/front.png" type="Texture" id=16]
 
-<<<<<<< HEAD
-[node name="Node2D" type="Node2D"]
-||||||| bf5d58b
-[node name="Node" type="Node"]
-=======
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 3 ) ],
@@ -55,7 +50,6 @@ extents = Vector2( 33.8431, 46.0245 )
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
->>>>>>> feat/char
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
