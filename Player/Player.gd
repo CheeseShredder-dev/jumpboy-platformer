@@ -14,17 +14,6 @@ func _ready():
 
 func _physics_process(delta):
 	
-	move_and_slide(movement, Vector2(0, -1))
-	
-	#This adds gravity
-	if is_on_floor():
-		airbound = false
-		movement.y = 0
-	elif is_on_ceiling():
-		movement.y = 0
-	else:
-		movement.y += gravity.y
-	
 	#This script handles horizontal movement
 	if Input.is_action_pressed("ui_right"):
 		movement.x = 1 * speed
@@ -35,7 +24,7 @@ func _physics_process(delta):
 	
 	
 	#This handles jump
-	if Input.is_action_just_pressed("ui_up") and airbound == false:
+	if Input.is_action_pressed("ui_up") and airbound == false:
 		airbound = true
 		movement.y = -1 * jump_force
 	
@@ -50,7 +39,27 @@ func _physics_process(delta):
 	else:
 		$AnimatedSprite.play("stand_right")
 	
+	move_and_slide(movement, Vector2(0, -1))
 	
+	if not is_on_floor():
+		airbound = true
+	else:
+		airbound = false
+		movement.y = 0
+	
+	if is_on_ceiling():
+		movement.y = 0
+		movement.y += gravity.y
+	else:
+		movement.y += gravity.y
+	
+	if airbound:
+		print('AIRBOUND')
+	
+
+
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

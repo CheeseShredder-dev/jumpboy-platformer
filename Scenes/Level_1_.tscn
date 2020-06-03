@@ -2,41 +2,41 @@
 
 [ext_resource path="res://Tileset.res" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
-[ext_resource path="res://Graphic Assets/Character Anim/side.png" type="Texture" id=3]
-[ext_resource path="res://Graphic Assets/Character Anim/jump.png" type="Texture" id=4]
-[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0001.png" type="Texture" id=5]
-[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0002.png" type="Texture" id=6]
-[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0003.png" type="Texture" id=7]
-[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0004.png" type="Texture" id=8]
-[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0005.png" type="Texture" id=9]
-[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0006.png" type="Texture" id=10]
-[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0007.png" type="Texture" id=11]
-[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0008.png" type="Texture" id=12]
-[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0009.png" type="Texture" id=13]
-[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0010.png" type="Texture" id=14]
-[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0011.png" type="Texture" id=15]
-[ext_resource path="res://Graphic Assets/Character Anim/front.png" type="Texture" id=16]
+[ext_resource path="res://Graphic Assets/Character Anim/front.png" type="Texture" id=3]
+[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0001.png" type="Texture" id=4]
+[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0002.png" type="Texture" id=5]
+[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0003.png" type="Texture" id=6]
+[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0004.png" type="Texture" id=7]
+[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0005.png" type="Texture" id=8]
+[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0006.png" type="Texture" id=9]
+[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0007.png" type="Texture" id=10]
+[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0008.png" type="Texture" id=11]
+[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0009.png" type="Texture" id=12]
+[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0010.png" type="Texture" id=13]
+[ext_resource path="res://Graphic Assets/Character Anim/Frames/walk0011.png" type="Texture" id=14]
+[ext_resource path="res://Graphic Assets/Character Anim/jump.png" type="Texture" id=15]
+[ext_resource path="res://Graphic Assets/Character Anim/side.png" type="Texture" id=16]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "stand_right",
+"name": "stand_front",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ) ],
-"loop": true,
-"name": "jumping",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "walk_right",
 "speed": 15.0
 }, {
+"frames": [ ExtResource( 15 ) ],
+"loop": true,
+"name": "jumping",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 16 ) ],
 "loop": true,
-"name": "stand_front",
+"name": "stand_right",
 "speed": 5.0
 } ]
 
