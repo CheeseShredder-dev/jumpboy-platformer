@@ -9,11 +9,11 @@
 size = 90
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=2]
 size = 45
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=3]
 size = 45
 font_data = ExtResource( 4 )
 
@@ -56,7 +56,7 @@ margin_top = -28.0
 margin_right = 59.0
 margin_bottom = 31.0
 mouse_filter = 1
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 2 )
 text = "PLAY"
 flat = true
 
@@ -70,7 +70,7 @@ margin_top = -319.0
 margin_right = 59.0
 margin_bottom = -260.0
 mouse_filter = 1
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 3 )
 text = "QUIT"
 flat = true
 
