@@ -1,18 +1,34 @@
 extends KinematicBody2D
 
-const speed = 500
+signal level_completed
+
+var speed = 500
 var movement = Vector2()
 var airbound = false
-const gravity = Vector2(0, 50)
-const jump_force = 1200
+var gravity = Vector2(0, 50)
+var jump_force = 1200
+var label_node
+var timer = Timer.new()
+var jump_activated = true
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
+	label_node = get_node("WinLabel")
+
+
+
+
+func _process(delta):
+	print(airbound)
 	pass
 
 
 
 func _physics_process(delta):
+	move_character()
+
+
+func move_character():
 	
 	
 	#This script handles input and movement
@@ -23,8 +39,7 @@ func _physics_process(delta):
 	else:
 		movement.x = 0
 	
-	if Input.is_action_pressed("ui_up") and airbound == false:
-		airbound = true
+	if Input.is_action_pressed("ui_up") and airbound == false and jump_activated:
 		movement.y = -1 * jump_force
 	
 	
@@ -47,12 +62,12 @@ func _physics_process(delta):
 	
 	
 	#This checks wether the player is in mid-air or not and updates the
-	#	'airbound' variable 
-	if not is_on_floor():
-		airbound = true
-	else:
+	#'airbound' variable 
+	if is_on_floor():
 		airbound = false
 		movement.y = 0
+	else:
+		airbound = true
 	
 	
 	#This makes the player not gain speed while standing on the ground
@@ -61,11 +76,30 @@ func _physics_process(delta):
 		movement.y += gravity.y
 	else:
 		movement.y += gravity.y
+
+
+func _on_Area2D_body_entered(body):
 	
-
-
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	#Checks if the player has entered the Area2D
+	if body == self:
+		
+		#sets both gravity and speed to half their original value for slow-mo effect
+		#and makes it impossible for the player to jump
+#		gravity = Vector2(0, 25)
+		speed = 200
+		jump_activated = false
+		
+		#Displays the label node with the message 'You Win'
+		label_node.visible = true
+		
+		timer.set_wait_time(1)
+		add_child(timer)
+		timer.start()
+		yield(timer, "timeout")
+		
+		set_physics_process(false)
+		
+		#Plays the right animation
+		$AnimatedSprite.play("stand_right")
+		
+		emit_signal("level_completed")

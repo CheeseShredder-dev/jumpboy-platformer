@@ -6,7 +6,7 @@ onready var quit_prompt = $ConfirmationDialog
 onready var quit_button = $QuitButton
 onready var play_button = $PlayButton
 
-var level_name = "LEVELONE"
+var level_name = "LEVEL ONE"
 
 
 # Called when the node enters the scene tree for the first time.
